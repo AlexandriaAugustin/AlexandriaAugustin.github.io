@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Alexandria Augustin</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon - Copy.ico" rel="icon" type="image/x-icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      width: 100%;
+      background: #f8f9fa;
+      position: relative;
+      padding: 0 5%;
+    }
+    .hero-text {
+      flex: 1;
+    }
+    #hero h1 {
+      font-size: 4rem;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+    #fadeText {
+      font-size: 2rem;
+      color: #555;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .hero-image {
+      flex: 1;
+      max-width: 50%;
+      height: auto;
+      object-fit: cover;
+    }
+    .hero-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    #about {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 5% 10%;
+      background: #fdfdfd;
+    }
+    .about-content {
+      max-width: 800px;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename"></h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1 style="color: #8B5E3B;"> Alexandria Augustin
+          <p id="fadeText">Business Analyst</p>
+        </div>
+        <img src="assets\img\profile\9e178a8c-4710-4651-bf1d-6f6ba6da7420.webp" alt="Profile Picture" class="hero-image">
+      </div>
+    </section>
+    
+     <!-- About Section -->
+     <section id="about" class="about section">
+      <style>
+        .justified-text {
+            text-align: justify;
+        }
+      </style>
+      <div class="about-content">
+        <h2 style="color: #8B5E3B; position: relative; display: inline-block; font-weight: 700;">About
+  <div style="width: 120px; height: 2px; background-color: transparent; margin: 8px auto;">
+    <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="var(--accent-color)" stroke-width="2"></path>
+    </svg>
+  </div>
+</h2>
+
+        <p>Business Analytics | Statistics | Generative AI | Machine Learning Engineer</p>
+        
+        <p> </p>
+        <p>I am a Business Analyst with seven years of experience, specializing in AI-driven business strategies. My expertise spans Machine Learning, Data Science, Statistics, Artificial Intelligence, Data Analytics, and Visualization.  <br></p>
+        <p><i> “Great things in business are never done by one person. They're done by a team of people. ~Steve Jobs” </i> </p>
+        
+      
+        </div>
+    </section>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+      
+      const titles = ["Data Engineer", "Business Statistics & Analytics", "Generative AI ", "Machine Learning"];
+      let index = 0;
+      const fadeTextElement = document.getElementById("fadeText");
+      
+      function changeTitle() {
+        fadeTextElement.style.opacity = "0";
+        setTimeout(() => {
+          fadeTextElement.textContent = titles[index];
+          fadeTextElement.style.opacity = "1";
+          index = (index + 1) % titles.length;
+        }, 500);
+      }
+      
+      setInterval(changeTitle, 3000);
+    </script>
+  </main>
+</body>
+</html>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 skills-animation">
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3>AI and Data Science</h3>
+              <p> Vertex AI Studio | Azure ML | TensorFlow | PyTorch | MLflow | Generative AI | Predictive Modeling | Anomaly Detection | AI Integration | Python | R | Pandas</p>
+              
+              <span class="text-end d-block">95%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+              <h3>Data Analytics & Visualization</h3>
+              <p> Tableau | Power BI | Google BigQuery | Google Data Pipelines | Google Workbench | SQL </p>
+              <span class="text-end d-block">90%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+              <h3>Cloud & Infrastructure</h3>
+              <p> Google Cloud Platform (GCP) | Microsoft Azure | Amazon Web Services (AWS) | Google Cloud Jupyter Notebooks | Snowball | EKS | GitHub | Infrastructure as Code (IaC) | Java </p>
+              <span class="text-end d-block">88%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <h3>CRM & Collaboration</h3>
+              <p> Salesforce | Jira | Figma | Microsoft Office Tools  </p>
+              <span class="text-end d-block">80%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Resume 
+      <a href="path/to/your-resume.pdf" download>
+        <i class="fas fa-download"></i>
+      </a>
+    </h2>
+    <div class="title-shape">
+      <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+      </svg>
+    </div>
+  </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block" data-aos="fade-up">
+                <h2>Work Experience</h2>
+
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">Downtown Soup Kitchen</h4>
+                      <span class="period">May, 2025 - Present</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Data Analyst</h3>
+                      <p class="description"> 
+                        • Cleaned and organized program data to improve service tracking accuracy. <br>
+                        • Analyzed trends in pantry usage and outreach to support strategic planning. <br>
+                        • Built reports and dashboards to highlight impact and aid decision-making.Built and validated models to evaluate credit risk treatments, guiding retention strategies for high-risk customers.  
+                        <br> <b>Tools used: </b> Excel, VB Scripting, Rasberry Pi, Google Data Studio, Google Analytics  <br>
+                        </p>
+                    </div>
+                  </div>
+
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">University of New Haven</h4>
+                      <span class="period">Aug, 2024 - May, 2025</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Academic Analysis</h3>
+                      <p class="description"> 
+                        • Built and validated models to evaluate credit risk treatments, guiding retention strategies for high-risk customers.  
+                    <br> 
+                        • Automated data wrangling to streamline analysis of spend, revenue, and fuel trends pre- and post-treatment.
+                        <br> 
+                        • Created Tableau dashboards to deliver insights, reducing write-offs and supporting stakeholder decisions.
+                        <br> <b>Tools used: </b> Azure ML, PL/SQL, LLM, Vertex AI <br>
+                        </p>
+                    </div>
+                  </div>
+
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">PowerSchool</h4>
+                      <span class="period">Nov, 2021 - Jun, 2023</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Product Support Engineer SIS</h3>
+                      <p class="description"> • Resolved 200+ technical issues monthly for B2B customers, ensuring 98% customer satisfaction.
+                        <br> 
+                        • Trained 20+ colleagues in technical and product methodologies, enhancing team performance. 
+                        <br> 
+                        • Improved resolution time by 15% through process optimizations and automation. 
+                        <br> <b>Tools used: </b>SIS, Python, Confluence, Jira, AWS, SQL, Power BI, Excel – Pivot Tables & Macros, Slack <br>
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">Centre for Artificial Intelligence & Advanced Analytics</h4>
+                      <span class="period">May, 2021 - Oct, 2021</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Product Coordinator</h3>
+                      <p class="description">
+                        • Delivered 100% on-schedule training for 50+ sessions, ensuring high satisfaction and quality. 
+                        <br> 
+• Optimized resource allocation, achieving a 15% increase in training efficiency. 
+<br> 
+• Contributed to strategic management decisions, enhancing training delivery quality. 
+<br> <b>Tools used:</b> Python, Azure, KNIME Gen AI, LLM, Slurm, Excel(Data Cleaning & Insights,Automation with Macros, Statistical Analysis) <br>
+
+                      </p>
+                  
+                    </div>
+                  </div>  
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">ALS</h4>
+                      <span class="period">Jul, 2018- Apr, 2019</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Product Development Manager</h3>
+                      <p class="description"> • Generated a 25% revenue increase by refining sales strategies and streamlining workflows. 
+                        <br> 
+                        • Negotiated partnerships with 5+ key stakeholders, boosting product adoption and market reach. 
+                        <br> 
+                        • Led cross-functional teams to enhance product roadmaps and optimize user experience. 
+                        <br> 
+                        <b>Tools used:</b> Salesforce, Microsoft Azure, Jira, Agile, Scrum, Figma, KNIME, Excel (Forecasting & Reporting,Data Analysis & Dashboards, Financial Modeling) <br>
+                        </p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">British Council</h4>
+                      <span class="period">Dec, 2017 - Jun, 2018</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Executive</h3>
+                      <p class="description">
+                        • Managed outbound calls and customer inquiries, achieving a 95% resolution rate. <br>
+• Coordinated with cross-functional teams to ensure on-time delivery of customer communication plans. <br>
+
+• Analyzed financial data for management reporting, improving decision-making accuracy. <br> 
+<strong>Tools used:</strong>  Tableau, SQL, Salesforce, 
+ Excel ( Customer Data Tracking, Financial Analysis & Dashboards) <br>
+                      </p>
+                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
+                <h2>My Education</h2>
+                
+
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">University of New Haven</h4>
+                      <span class="period">2023-2025</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Master of Business Statistics and Analytics</h3>
+                      
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">Anna University</h4>
+                      <span class="period">2013 - 2017</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position"> Bachelor of Engineering in Computer Science & Engineering</h3>
+                     
+                    </div>
+                  </div>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
+            <ul class="portfolio-filters isotope-filters">
+              
+              
+            </ul>
+          </div>
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/HoltWinters.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/HoltWinters.png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category"> Forecasting </span>
+                  <h3> Forecasting Connecticut's Economic Indicators</h3>
+                  <p> Forecast using HoltWinters Model</p>
+                  <a href="https://github.com/AlexandriaAugustin/Forecasting/blob/main/README.md" class="filter-active">View on GitHub</a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/Data mining .png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/Data mining .png" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category"> Data Mining </span>
+                  <h3> Optimizing stratergies to target Customer and Product </h3>
+                  <p> Datamining using Regression, Classification Tree and k - NN Models </p>
+                  <a href= "https://github.com/AlexandriaAugustin/Data-Mining" class="filter-active">View on GitHub</a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/Titans.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/Titans.png" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category"> PowerBi </span>
+                  <h3> Forbe's 2000 Global Companies </h3>
+                  <p> Using Kaggle dataset analysed the Titan of the Industry</p>
+                  <a href= "https://github.com/AlexandriaAugustin/Titans-of-the-Industry" class="filter-active">View on GitHub</a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/www.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/www.png" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Design</span>
+                  <h3>Analytic Website using Shiny</h3>
+                  <p> Website to show graphs of data</p>
+                  <a href= "https://github.com/AlexandriaAugustin/shiny" class="filter-active">View on GitHub</a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/Legalisation.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/Legalisation.png" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Behavioral Economics</span>
+                  <h3>Should Federal Government Legalise Marijuana? </h3>
+                  <p> An Economical Analysis on Government strategies and impacts</p>
+                  <a href= "https://github.com/AlexandriaAugustin/" class="filter-active">View on GitHub</a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/shirt.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/shirt.png" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category"> SQL </span>
+                  <h3> Merch Masters </h3>
+                  <p> Empowering fans express their love for game with style and authenticity</p>
+                  <a href= "https://github.com/AlexandriaAugustin/Data-Mining" class="filter-active">View on GitHub</a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2> 
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "slidesPerView": 1,
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2></h2>
+                    <p>
+                      Alexandria worked under my supervision at PowerSchool. She is an extremely talented woman who gives 100% in everything she does. She has a keen eye for details and walks that extra mile to achieve the desired result. She is strong with customer and stakeholder communication. I strongly commend her problem-solving and logical thinking.
+                    </p>
+                    
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/Sai.jpg" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Sai Sruthin Tirunahari</h3>
+                        <span>Manager, PowerSchool</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2></h2>
+                    <p>
+                      Alexandria is the definition of a dark horse—quietly analyzing complex problems and then effortlessly delivering game-changing insights like it’s second nature. She has an incredible ability to break down business challenges into clear, actionable solutions, all while keeping her cool when the rest of us are scrambling.<BR>
+                    </p>
+                    <p> Her dedication is unmatched, and she has this rare talent for making even the most daunting data and processes seem manageable (usually after a coffee or two). 
+If there’s an issue to solve, she dives in with no fuss, no drama, just results. Any team that brings her on board is essentially winning the strategic-thinking lottery!
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/Kiren.jpg" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>Kiren Balaji N</h3>
+                        <span>Product Owner, Ideas2IT Technologies</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    
+                      
+                    
+                    <p>
+                      
+                    </p>
+                    <p>
+                      Ms. Alex was one of those students you don’t forget—thoughtful, curious, and always fully engaged. She brought both heart and intelligence to class discussions and project work. During our semester, she played a key role in a team project focused on data-driven decision making, where her ability to connect the technical and human sides of the problem really stood out. She’s the kind of person who takes initiative, listens deeply, and follows through. I’ve truly enjoyed working with her and know she’ll be a valuable asset wherever she goes next.
+
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      <img src="assets/img/person/Arod.png" class="profile-img" alt="">
+                      <div class="profile-info">
+                        <h3>A.E. Rodriguez</h3>
+                        <span>Professor, Department of Economics & Business Analytics at University of New Haven</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                     
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h2></h2>
+                    <p>
+                      
+                    </p>
+                    <p>
+                     
+                    </p>
+                    <div class="profile d-flex align-items-center">
+                      
+                      <div class="profile-info">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+          </div>
+
+          <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-category mb-3">Contact</div>
+              <h2 class="display-5 mb-4">Stay Connected</h2>
+              
+
+              <div class="contact-info mt-5">
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-envelope-at me-3"></i>
+                  <span>alexavalentin89@gmail.com</span>
+                </div>
+
+                <div class="info-item d-flex mb-4">
+                  <i class="bi bi-geo-alt me-3"></i>
+                  <span> New York, US</span>
+                </div>
+
+                <div class="info-item d-flex mb-4">
+                  <i class="bi bi-linkedin me-3"></i>
+                  <a href="https://www.linkedin.com/in/alexandaugus/" target="_blank" class="text-decoration-none">
+                    <span> linkedin.com/in/alexandaugus/ </span>  
+                  </a>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+          
+            
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p> <span>Designed by Alexandria Augustin</span> <strong class="px-1 sitename"></strong> <span> © 2025 All Rights Reserved </span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/alexandaugus/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Crafted with ❤️
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
